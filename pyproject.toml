@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "construction-estimate-bot"
+version = "0.1.0"
+description = "Calculation core for a construction estimating bot"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Construction Estimate Bot" }]
+dependencies = []
+
+[project.scripts]
+estimate-bot = "estimate_bot.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
