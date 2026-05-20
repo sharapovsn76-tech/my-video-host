@@ -19,14 +19,14 @@ on top of this core without changing the estimating rules.
 ## Quick start
 
 ```bash
-python -m pip install -e .
+python3 -m pip install -e .
 estimate-bot "плитка 25 м2 по 1200 руб/м2, работа 25 м2 по 1800 руб/м2, наценка 15%"
 ```
 
 Run tests:
 
 ```bash
-python -m unittest discover -s tests
+PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
 ## Example output
